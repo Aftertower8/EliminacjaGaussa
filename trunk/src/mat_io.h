@@ -2,8 +2,8 @@
 #define _MAT_IO_H
 
 typedef struct _Matrix {
-				int r,c;
-				double **data;
+	int r,c;
+	double **data;
 } Matrix;
 
 /**

@@ -17,16 +17,20 @@ int main(int argc, char ** argv) {
 	printToScreen(b);
 
 	res = eliminate(A,b);
+	if(res==1)
+		return 1;	//blad dzielenie przez 0
 	x = createMatrix(b->r, 1);
 	if (x != NULL) {
 		res = backsubst(x,A,b);
-
+		if(res==1)
+			return 1;	//blad dzielenie przez 0
+		if(res==2)
+			return 2;	//blad nieprawidlowy rozmiar macierzy
 		printToScreen(x);
 	  freeMatrix(x);
 	} else {
 					fprintf(stderr,"Błąd! Nie mogłem utworzyć wektora wynikowego x.\n");
 	}
-
 	freeMatrix(A);
 	freeMatrix(b);
 
