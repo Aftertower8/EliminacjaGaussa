@@ -23,11 +23,9 @@ int  backsubst(Matrix *x, Matrix *mat, Matrix *b) {
 		if(mat->data[i][kolumna_akt_x])
 			return 1;	//blad - dzielenie przez 0
 		wartosc_akt_x/=mat->data[i][kolumna_akt_x];
+		x->data[i][0]=wartosc_akt_x;
 		kolumna_akt_x--;
 	}
 	return 0;
 }
-
-//
-
 
