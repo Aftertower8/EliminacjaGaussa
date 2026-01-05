@@ -22,7 +22,7 @@ int eliminate(Matrix *mat, Matrix *b) {
             }
         }
         if (maxVal == 0.0) {
-            return 1;
+            return 2;
         }
 
         // Zamiana wierszy w macierzy
