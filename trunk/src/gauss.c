@@ -1,6 +1,6 @@
 #include "gauss.h"
 #include <math.h>
-
+// Komentarz wywolujacy konflikt
 /**
  * Zwraca 0 - eliminacja zakończona sukcesem
  * Zwraca 1 - macierz osobliwa - dzielenie przez 0
